@@ -2,6 +2,7 @@ package methods;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WebDriverSettings {
@@ -10,13 +11,14 @@ public class WebDriverSettings {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver","/usr/local/bin/chromedriver"); //Insert your directory
+        System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
         driver = new ChromeDriver();
     }
 
+
     @After
     public void close() {
-        driver.quit();
+        //driver.quit();
     }
 
 
