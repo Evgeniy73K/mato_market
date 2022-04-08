@@ -33,7 +33,7 @@ public class WishDateDelivery extends WebDriverSettings {
     public void checkWishDate() {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         Actions actions = new Actions(driver);
-        System.out.println(Month.of(4));
+
 
         driver.get("http://dev.cart-power.com/vnavolykin/mato.uz/?store_access_key=key_value");
 
